@@ -3,25 +3,12 @@ spring:
         active: 
         - dev
 ---
-server: 
-   port: 8201
 spring:
     profiles: dev
     application: 
-        name: microservicecloud-config-client
-eureka: 
- client: 
-    service-url: 
-      defaultZone: http://euraka-dev.com:7001/euraka/
+        name: microservicecloud-config-atguigu-dev
 ---
-server: 
-   port: 8202
-spring:
+spring: 
     profiles: test
-    application: 
-        name: microservicecloud-config-client
-eureka: 
- client: 
-  service-url: 
-    defaultZone: http://euraka-test.com:7001/euraka/
-
+    application:
+        name: microservicecloud-config-atguigu-test
